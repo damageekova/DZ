@@ -18,14 +18,14 @@ float avg1=(a+b+c)/3;
 return avg1;
 }
 void swap_1(float a, float b, float c) {
-float d = c;
+float temp = c;
 c = b;
 b = a;
-a = d;
-cout<<a<<b<<c;
+a = temp;
 }
 float med (float a,float b,float c);
-if (a>b) {if (b>c) {x=a;y=b;z=c;}
+if (a>b) {if (b>c) {x=a;y=b;z=c;
+}
 else {if (c>a) {x=c;y=a;z=b;
 }
 else {x=a;y=c;z=b;
@@ -42,6 +42,12 @@ else {x=c;y=b;z=a;
 }
 int main () {
 cin>> a >> b >> c;
-cout<<min (a,b,c)<<" "<<max (a,b,c)<<" "<<avg (a,b,c)<<" "<< swap_1 (a,b,c)<<" "<<med (a,b,c);
+cout<<"min"<<min (a,b,c)endl;
+cout<<"max"<<" "<<max (a,b,c)<<endl;
+cout<<"avg"<<" "<<avg (a,b,c)<<endl;
+cout<<"swap"<<" "<<a<<b<<c<<endl;
+swap_1 (a,b,c);
+cout<<a<<b<<c;
+cout<<"med"<<" "<<med (a,b,c);
 return 0;
 }
