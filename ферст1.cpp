@@ -30,21 +30,21 @@ a = temp;
 }
 float med (float a,float b,float c);
 if (a>b) {if (b>c) {x=a;y=b;z=c;
-}
-else {if (c>a) {x=c;y=a;z=b;
-}
-else {x=a;y=c;z=b;
-}
-}
-}
+                   }
+         else {if (c>a) {x=c;y=a;z=b;
+                        }
+               else {x=a;y=c;z=b;
+                    }
+              }
+          }
 else { if (a>c) {x=b;y=a;z=c;
-}
-else {if (c>b){x=c;y=b;z=a;
-}
-else {x=c;y=b;z=a;
-}
-}
-}
+                }
+       else {if (c>b){x=c;y=b;z=a;
+                     }
+             else {x=c;y=b;z=a;
+                  }
+            }
+     }
 int main () {
 cin>> a >> b >> c;
 cout<<"min"<<min (a,b,c)endl;
