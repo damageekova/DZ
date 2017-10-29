@@ -7,19 +7,19 @@ swap - переставляет значения по кругу ( первое 
 
 float min1,max1,avg1,a,b,c;
 float max (float a, float b, float c){
-float max1=a;
-if (b>max1) max1=b;
-if (c>max1) max1=c;
+float max1 = a;
+if (b > max1) max1 = b;
+if (c > max1) max1 = c;
 return max1;
 }
 float min (float a, float b, float c){
-float min1=a;
-if (b<min1) min1=b;
-if (c<min1) min1=c;
+float min1 = a;
+if (b < min1) min1 = b;
+if (c < min1) min1 = c;
 return min1;
 }
 float avg (float a, float b, float c){
-float avg1=(a+b+c)/3;
+float avg1 = (a+b+c)/3;
 return avg1;
 }
 void swap_1(float a, float b, float c) {
@@ -29,30 +29,40 @@ b = a;
 a = temp;
 }
 float med (float a,float b,float c);
-if (a>b) {if (b>c) {x=a;y=b;z=c;
+if (a > b) {if ( b > c) {x=a;y=b;z=c;
                    }
-         else {if (c>a) {x=c;y=a;z=b;
+         else {if (c > a) {x = c;
+                           y = a;
+                           z = b;
                         }
-               else {x=a;y=c;z=b;
+               else {x = a;
+                     y = c;
+                     z = b;
                     }
-              }
-          }
-else { if (a>c) {x=b;y=a;z=c;
+               }
+         }
+else { if (a > c) {x = b; 
+                   y = a;
+                   z = c;
                 }
-       else {if (c>b){x=c;y=b;z=a;
+       else {if (c > b){x = c;
+                        y = b;
+                        z = a;
                      }
-             else {x=c;y=b;z=a;
+             else {x = c;
+                   y = b;
+                   z = a;
                   }
             }
      }
 int main () {
-cin>> a >> b >> c;
-cout<<"min"<<min (a,b,c)endl;
-cout<<"max"<<" "<<max (a,b,c)<<endl;
-cout<<"avg"<<" "<<avg (a,b,c)<<endl;
-cout<<"swap"<<" "<<a<<b<<c<<endl;
+cin >> a >> b >> c;
+cout << "min" << min (a,b,c) << endl;
+cout << "max" <<" " << max (a,b,c) << endl;
+cout << "avg" << " " << avg (a,b,c) << endl;
+cout << "swap" << " " << a << b << c << endl;
 swap_1 (a,b,c);
-cout<<a<<b<<c;
-cout<<"med"<<" "<<med (a,b,c);
+cout << a << b << c;
+cout << "med" << " " << med (a,b,c);
 return 0;
 }
