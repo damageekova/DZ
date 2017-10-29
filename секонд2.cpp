@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+/*Напишите рекурсивную функцию pow( быстрое возведение вещественного числа в целую степень) 
+и пример программы её использующей.*/
+
 double a;
 int k;
 double pow(double a, int k)
